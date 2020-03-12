@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class Review3 {
+
+	private static Scanner input;
+  // find and display the sum for the 4 integers and the qutient for the last integer.
+  // if the last integer is lessthan or equal to 1, then terminate the program.
+  
+	public static void main(String[] args) {
+		input = new Scanner(System.in);
+		
+		int c,d,e,f,i, sum=0,n;
+		//DISPLAY and USER INPUT
+		
+		System.out.println("  ");
+		System.out.println(" REVIEW 3 ");
+		System.out.println("  ");
+		System.out.println("  ");
+		System.out.println(" Enter number ");
+		System.out.print("A = ");
+		c=input.nextInt();
+		System.out.print("B = ");
+		d=input.nextInt();
+		System.out.print("C = ");
+		e=input.nextInt();
+		System.out.print("D = ");
+		f=input.nextInt();
+		
+		//OPTION "F"
+		do
+		{
+			
+			// "SUM AND DIVISIBILITY"
+			//Rule
+			sum=c+d+e;
+			n=sum%+f;
+			
+			//DISPLAY OUTPUT
+			System.out.println(" ");
+			System.out.println("SUM of A,B,C is = " +sum);
+			System.out.println("The sum is divisible by = " +n);
+			System.out.println(" ");
+		
+			
+			
+		}
+		while (i<=1);
+        //DISPLAY terminated program
+			System.out.println(" The Number entered is invalid " + f );
+			System.out.println(" Therefore the program is terminated");
+	}
+
+}
